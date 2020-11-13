@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+  background-color: #AE3044;
+  display: flex;
+align-items: center;
+justify-content: center;
+height:100vh;
+}
+
+.main
+{
+    position: relative;
+  background-color: #B37A9E;
+  height:600px;
+  width:100%;
+  max-width: 1000px;
+  border-radius:19px 19px;
+  display: flex;
+
+}
+
+.player
+{
+    height:100%;
+    width:50%;
+    border-radius: inherit;
+    padding: 100px;
+    text-align: center;
+    display: flex;
+    font-size: 41px;
+    font-weight:80 ;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.6s;
+    color:rgb(78, 77, 77);
+}
+.player1
+{
+    border-radius: 19px 0px 0px 19px;
+}
+
+.player2
+{
+    border-radius: 0px 19px 19px 0px;
+}
+
+
+.middler
+{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50rem;
+    padding: 0.6rem 2.0rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #444;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+
+img{
+    position: absolute;
+    width:100px;
+    top:190px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.newgame
+{
+    top:40px;
+}
+
+.rolldice
+{
+    bottom:150px;
+}
+
+.hold
+{
+    bottom:80px;
+}
+
+.currscore
+{
+    background-color: #C7365F;
+    border-radius: 9px;
+    padding:23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    font-size: 20px;
+    width:130px;
+    height:130px;
+    position: absolute;
+    bottom: 60px;
+    text-align: center;
+    align-items: center;
+}
+
+.score{
+    color: #C7365F;
+    font-size:70px;
+}
+
+.curr_score
+{
+    font-size:36px;
+}
+.middler:active {
+    transform: translate(-50%,3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35);
+  }
+  
+.won
+{
+    background-color: #2F2F2F;
+    color: #C7365F;
+}
+.curr_player
+{
+    color: black;
+    font-weight: 1000;
+    background-color: #E0AEB6;
+}
+.hidden
+{
+    display: none;
+}
